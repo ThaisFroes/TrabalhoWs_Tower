@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Principal"
+             x:Class="Ws_Towers.Views.Menu">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="{StaticResource azul}" Spacing="0">
+
+            <StackLayout BackgroundColor="{StaticResource textColor}"
+                         HeightRequest="200">
+                <Frame
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    BorderColor="{StaticResource FontPreta}"
+                    CornerRadius="100"
+                    HeightRequest="100"
+                    WidthRequest="100"
+                    IsClippedToBounds="True">
+                </Frame>
+
+                <Label Text="Nome do Usuário"
+                      VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
+                       FontSize="20" TextColor="{StaticResource azul}"/>
+            </StackLayout>
+
+                <StackLayout BackgroundColor="{StaticResource vermelho}">
+                <Button Clicked="Btn_Inicio"
+                        BackgroundColor="Transparent"
+                        TextColor="{StaticResource textColor}"
+                        FontSize="17" Text="Inicio"/>
+                </StackLayout>
+
+                <StackLayout BackgroundColor="{StaticResource azulClaro}">
+                <Button Clicked="Btn_Ingressos"
+                        TextColor="{StaticResource textColor}" 
+                        FontSize="17"
+                        BackgroundColor="Transparent" 
+                        Text="Meus Ingressos"/>
+                </StackLayout>
+
+            <StackLayout BackgroundColor="{StaticResource roxo}">
+                <Button Clicked="Btn_Sobre" 
+                        TextColor="{StaticResource textColor}"
+                        FontSize="17"
+                        BackgroundColor="Transparent"
+                        Text="Sobre o APP"/>
+                </StackLayout>
+
+                <StackLayout VerticalOptions="EndAndExpand" BackgroundColor="{StaticResource verde}">
+                <Button Clicked="Btn_Sair" 
+                        BackgroundColor="Transparent"
+                        TextColor="{StaticResource textColor}"
+                        FontSize="17"
+                        Text="Sair"/>
+                </StackLayout>
+            
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

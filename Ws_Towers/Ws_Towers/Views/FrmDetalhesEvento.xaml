@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Detalhes do evento"
+             x:Class="Ws_Towers.Views.FrmDetalhesEvento">
+    <ContentPage.Content>
+        <StackLayout Spacing="5">
+            <!--Imagem Logo-->
+            <Image Margin="0,25,0,0" Source="WS_Towers.png" WidthRequest="300"/>
+            <!--Imagem Logo fifa-->
+            <Image 
+                   Margin="30"
+                   Source="app_logo.png"
+                   WidthRequest="{OnPlatform Android=300}"
+                   HeightRequest="{OnPlatform Android=100}">
+            </Image>
+            <!--Informações do Confronto-->
+            <StackLayout>
+                <StackLayout HorizontalOptions="Center">
+                    <Label Text="Palmeiras X Flamengo" TextColor="{StaticResource azul}" FontAttributes="Bold" FontSize="26"></Label>
+                </StackLayout>
+                
+                <StackLayout>
+                    <Label Text="Campeonato Brasileiro" TextColor="{StaticResource FontPreta}" FontAttributes="Bold" FontSize="Medium"></Label>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Horário 20:00 a 00:00" TextColor="{StaticResource FontPreta}" FontSize="17"></Label>
+                <Label Text="Data:20/10/2020" TextColor="{StaticResource FontPreta}" FontSize="17"></Label>
+            </StackLayout>
+
+            <Label VerticalOptions="End"
+                   Text="Local: Pacaembu"
+                   TextColor="{StaticResource vermelho}"
+                   FontSize="22">
+            </Label>
+            <Label Text="Detalhes:"
+                   TextColor="{StaticResource FontPreta}"
+                   FontSize="20"
+                   ></Label>
+            <Label Text="Grande decisão, o jogo decide se o Palmeiras vai cair (Pela 3º vez) ou se o Flamengo será o novo Campeão Brasileiro de Futebol, assim como o ano passado."
+                   TextColor="{StaticResource FontPreta}"
+                   FontSize="16">
+            </Label>
+            <!--Botão de Comprar os Ingressos-->
+            <Button Text="Comprar"
+                    CornerRadius="5"
+                    TextColor="{StaticResource textColor}"
+                    BackgroundColor="{StaticResource verde}"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    WidthRequest="150"
+                    FontSize="18"
+                    >
+            </Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

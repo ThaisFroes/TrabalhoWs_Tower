@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Ws_Towers.Views.FrmCadastro">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout
+                VerticalOptions="CenterAndExpand"
+                Spacing="10">
+                <Image
+                        Source="ImgLogin.png"
+                        HeightRequest="200"
+                        WidthRequest ="200"/>
+                <Entry
+                    Placeholder="Nome completo"
+                    ClearButtonVisibility="WhileEditing"
+                    x:Name="txtNome"
+                    HorizontalOptions="FillAndExpand"
+                    />
+
+                <Entry
+                    Placeholder="Nome de usuário"
+                    x:Name="txtUsuario"
+                    HorizontalOptions="FillAndExpand"
+                    />
+
+                <Entry
+                    Placeholder="Email"
+                    x:Name="txtEmail"
+                    HorizontalOptions="FillAndExpand"
+                    />
+
+                <Entry
+                    IsPassword="True"
+                    Placeholder="Senha"   
+                    x:Name="txtSenha"
+                    HorizontalOptions="FillAndExpand"
+                    />
+
+                <Entry
+                    Placeholder="Confirmar senha"
+                    HorizontalOptions="FillAndExpand"
+                    />
+
+                <StackLayout 
+                    Orientation="Horizontal" 
+                    Margin="0,10,0,0">
+
+                    <Label 
+                        Text="Gravar senha?" 
+                        TextColor="Black" 
+                        FontSize="18"/>
+
+                    <Switch 
+                        x:Name="SalvarSenha_Toggle" 
+                        IsToggled="True" 
+                        HorizontalOptions="Start"/>
+                </StackLayout>
+                
+                <Button
+                    Text="Cadastrar-se"
+                    TextColor="White"
+                    BackgroundColor="{StaticResource azul}"
+                    HorizontalOptions="Center"
+                    WidthRequest="150"
+                    CornerRadius="8"
+                    />
+            </StackLayout>
+
+            <Button
+                Clicked="btnVoltar_Clicked"
+                Text="Voltar"
+                TextColor="{StaticResource azul}"
+                BackgroundColor="Transparent"
+                VerticalOptions="EndAndExpand"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

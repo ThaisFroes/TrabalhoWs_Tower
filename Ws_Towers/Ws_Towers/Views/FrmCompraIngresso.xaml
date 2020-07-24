@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Ws_Towers.Views.FrmCompraIngresso">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            
+            <Image Margin="0,40,0,0" Source="WS_Towers"
+                   WidthRequest="330"
+                   />
+            <StackLayout Spacing="30"/>
+            <Image 
+                   Margin="10"
+                HorizontalOptions="Center"
+                   Source="app_logo.png"
+                   WidthRequest="{OnPlatform Android=300}"
+                   HeightRequest="{OnPlatform Android=100}">
+            </Image>
+            
+            <Label Text="Palmeiras x Flamengo"
+                   TextColor="{StaticResource azul}"
+                   FontSize="Medium"/>
+            <Label Text="Campeonato Brasileiro" TextColor="Black"/>
+            <Label Text="Horário: 20:00 a 00:00" TextColor="Black"/>
+            <Label Text="Local: Pacaembu"
+                   TextColor="Red"/>
+            <Label Text="Data: 20/10/2020" 
+                   TextColor="Black"/>
+            
+            <StackLayout>
+                <Label Text="Tipo de ingresso: Arquibancada" TextColor="Black"/>
+                <StackLayout Spacing="30"/>
+                <Label Text="Quantidade: 2"
+                       TextColor="Black"/>
+                <StackLayout Spacing="30"/>
+                <Label Text="Valor: 192,22 Reais" TextColor="Black"/>
+                <StackLayout Spacing="30"/>
+                <Label Text="Forma de pagamento: Dinheiro" TextColor="Black"/>
+            </StackLayout>
+            
+            <StackLayout Margin="0,30,0,0"  HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Spacing="40">
+                <Button Text="Cancelar"
+                         CornerRadius="5"
+                        WidthRequest="150"
+                        FontSize="18"
+                        BackgroundColor="{StaticResource vermelho}"
+                        TextColor="{StaticResource textColor}"/>
+                <Button Text="Comprar"
+                        FontSize="18"
+                        CornerRadius="5"
+                        WidthRequest="150"
+                        BackgroundColor="{StaticResource verde}"
+                        TextColor="{StaticResource textColor}">
+                </Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

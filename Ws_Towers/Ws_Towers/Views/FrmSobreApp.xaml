@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Sobre o App"
+             x:Class="Ws_Towers.Views.FrmSobreApp">
+    <ContentPage.Content>
+        <StackLayout Spacing="10">
+
+                <Image
+                    Source="WS_Towers.png"
+                    WidthRequest ="300"
+                    Margin="20"/>
+
+                <StackLayout BackgroundColor="{StaticResource azul}">
+                    <Label FontSize="22"
+                           TextColor="{StaticResource textColor}" 
+                           Text="Informações" 
+                           HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Margin="20,5,5,5">
+                    
+                <Label FontSize="20"
+                       TextColor="{StaticResource azul}" 
+                       Text="Ws Towers Eventos" 
+                      />
+
+                <Label FontSize="20"
+                       TextColor="#C0C0C0" 
+                       Text="Tipo: Divulgação de eventos" 
+                       />
+
+                <Label FontSize="20"
+                       TextColor="#C0C0C0" 
+                       Text="Site: www.Wstower.com" 
+                       />
+
+                <Label FontSize="20"
+                       TextColor="#C0C0C0" 
+                       Text="Sede: São Paulo, Brazil" 
+                       />
+                </StackLayout>
+
+            <StackLayout BackgroundColor="{StaticResource azul}">
+                <Label FontSize="22"
+                       TextColor="{StaticResource textColor}" 
+                       Text="Patrocinadores" 
+                       HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <StackLayout Margin="0,5,0,0">
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="30">
+                    <Image Source="Spcine.png" WidthRequest="150"/>
+                    <Image Source="Adidas.png" WidthRequest="150"/>
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="30">
+                    <StackLayout>
+                        <Label  FontSize="15" Text="Sede: São Paulo, Brazil"></Label>
+                        <Label  FontSize="15" Text="Tipo: Cinema"></Label>
+                        <Label  FontSize="15" Text="Site: www.spcine.com"></Label>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Label FontSize="15" Text="Sede: São Paulo, Brazil"></Label>
+                        <Label  FontSize="15" Text="Tipo: Esporte"></Label>
+                        <Label  FontSize="15" Text="Site: www.adidas.com"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+            <Image
+                    Source="WS_Towers.png"
+                    WidthRequest ="250"
+                    VerticalOptions="EndAndExpand" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

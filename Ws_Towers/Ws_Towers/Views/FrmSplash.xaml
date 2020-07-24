@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             mc:Ignorable="d"
+             BackgroundImageSource="Backgroud.png"
+             x:Class="Ws_Towers.Views.FrmSplash">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Margin="0,70,0,0">
+                <Image x:Name="logoImagem" Source="WS_Towers.png" WidthRequest="370"/>
+
+                <Label Margin="0,100,0,0" TextColor="White" FontSize="26" Text="Seu App de eventos favorito"/>
+            </StackLayout>
+            
+            <lottie:AnimationView 
+            x:Name="AnimationView" 
+            Animation="anime.json" 
+            AutoPlay="True" Loop="true"
+            WidthRequest="200"
+            HeightRequest="200"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand" />
+            
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand">
+                <Label HorizontalOptions="Center" TextColor="White" FontSize="25" Text="Patrocinadores"/>
+
+                <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Margin="0,0,200,0">
+                    <Image Source="Spcine.png"/>
+
+                    <Image Source="Adidas.png"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
